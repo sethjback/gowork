@@ -1,7 +1,6 @@
 package gowork
 
-// Worker do work when called by the queue and return their result when finished
+// Worker does the work
 type Worker interface {
-	// Do the work. Resturn will be passed over the results channel
-	Do() interface{}
+	Do() interface{} // Do something. The return is passed over the Results channel
 }

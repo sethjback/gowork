@@ -53,7 +53,7 @@ func (q *Queue) Finish() {
 	close(q.workQueue)
 }
 
-// Start spins up workerCount go routines to process work concurrently.
+// Start spins up workerCount go routines to process the work.
 func (q *Queue) Start(workerCount int) {
 	var wg sync.WaitGroup
 	wg.Add(workerCount)
